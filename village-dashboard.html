@@ -1,0 +1,474 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Village Coordinator - Gram Setu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <nav>
+
+        <div class="logo">
+    <img src="Logo1.jpg" alt="Gram Setu Logo">
+</div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="village-dashboard.html">
+                Village Coordinator
+            </a>
+
+            <a href="medical-dashboard.html">
+                Medical College
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         VILLAGE COORDINATOR
+         DASHBOARD
+         ========================= -->
+
+    <main class="dashboard-page">
+
+
+        <!-- HEADER -->
+
+        <section class="dashboard-heading">
+
+            <div>
+
+                <p class="hero-tagline">
+                    GRAM SETU • VILLAGE COORDINATOR
+                </p>
+
+                <h1>
+                    Village Dashboard
+                </h1>
+
+                <p>
+                    Manage your village healthcare needs,
+                    outreach requests, and camp information.
+                </p>
+
+            </div>
+
+
+            <div class="profile-badge">
+
+                <div class="profile-icon">
+                    🏘️
+                </div>
+
+                <div>
+
+                    <strong>
+                        Village Coordinator
+                    </strong>
+
+                    <small>
+                        Rampur Village
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             VILLAGE OVERVIEW
+             ========================= -->
+
+        <section class="dashboard-stats">
+
+
+            <div class="dashboard-stat-card">
+
+                <span>👥</span>
+
+                <strong>
+                    2,500
+                </strong>
+
+                <small>
+                    Population
+                </small>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <span>🟡</span>
+
+                <strong>
+                    Due
+                </strong>
+
+                <small>
+                    Healthcare Status
+                </small>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <span>🏥</span>
+
+                <strong>
+                    0
+                </strong>
+
+                <small>
+                    Camps Completed
+                </small>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <span>📅</span>
+
+                <strong>
+                    1
+                </strong>
+
+                <small>
+                    Upcoming Camp
+                </small>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             MAIN DASHBOARD GRID
+             ========================= -->
+
+        <section class="village-dashboard-grid">
+
+
+            <!-- VILLAGE PROFILE -->
+
+            <div class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <p class="card-label">
+                            VILLAGE PROFILE
+                        </p>
+
+                        <h2>
+                            Rampur Village
+                        </h2>
+
+                    </div>
+
+                    <span class="card-icon">
+                        🏘️
+                    </span>
+
+                </div>
+
+
+                <div class="profile-details">
+
+
+                    <div>
+
+                        <span>
+                            District
+                        </span>
+
+                        <strong>
+                            Kurnool
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            State
+                        </span>
+
+                        <strong>
+                            Andhra Pradesh
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Population
+                        </span>
+
+                        <strong>
+                            2,500
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Coordinator
+                        </span>
+
+                        <strong>
+                            Village Representative
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HEALTHCARE NEEDS -->
+
+            <div class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <p class="card-label">
+                            HEALTHCARE NEEDS
+                        </p>
+
+                        <h2>
+                            Current Requirements
+                        </h2>
+
+                    </div>
+
+                    <span class="card-icon">
+                        🩺
+                    </span>
+
+                </div>
+
+
+                <div class="needs-list">
+
+                    <div>
+                        <span>✓</span>
+                        General health checkups
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Basic health screening
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Health awareness
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="primary-btn dashboard-action"
+                    onclick="requestOutreach()"
+                >
+
+                    Request Healthcare Outreach
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             OUTREACH STATUS
+             ========================= -->
+
+        <section class="dashboard-card upcoming-card">
+
+
+            <div class="card-heading">
+
+                <div>
+
+                    <p class="card-label">
+                        OUTREACH STATUS
+                    </p>
+
+                    <h2>
+                        Upcoming Medical Camp
+                    </h2>
+
+                </div>
+
+
+                <span class="status-badge">
+                    Scheduled
+                </span>
+
+            </div>
+
+
+
+            <div class="camp-info-grid">
+
+
+                <div>
+
+                    <span>
+                        Medical Institution
+                    </span>
+
+                    <strong>
+                        Demo Medical College
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Camp Date
+                    </span>
+
+                    <strong>
+                        20 September 2026
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Services
+                    </span>
+
+                    <strong>
+                        General Checkup & Screening
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Expected Team
+                    </span>
+
+                    <strong>
+                        10 Members
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             REQUEST SUPPORT
+             ========================= -->
+
+        <section class="request-banner">
+
+
+            <div>
+
+                <span class="request-icon">
+                    🤝
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Need healthcare outreach?
+                    </h3>
+
+                    <p>
+                        Send a request to connect your
+                        village with a medical institution.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="secondary-btn"
+                onclick="requestOutreach()"
+            >
+
+                Request Support
+
+            </button>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gram Setu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <nav>
+
+        <div class="logo">
+    <img src="Logo1.jpg" alt="Gram Setu Logo">
+</div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="village-dashboard.html">
+                Village Coordinator
+            </a>
+
+            <a href="medical-dashboard.html">
+                Medical College
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HOME PAGE
+         ========================= -->
+
+    <main>
+ <!-- =========================
+     HERO SECTION
+     ========================= -->
+
+<main class="home-hero">
+
+    <div class="hero-content">
+
+        <p class="hero-tagline">
+            RURAL HEALTHCARE • CONNECTED
+        </p>
+
+        <h1>
+            Connecting Villages
+            <span>With Healthcare</span>
+        </h1>
+
+        <p class="hero-description">
+
+            Gram Setu connects rural villages with
+            medical organizations to coordinate
+            healthcare outreach, medical camps,
+            and village coverage.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="village-dashboard.html"
+               class="primary-btn">
+
+                Village Coordinator
+
+            </a>
+
+            <a href="medical-dashboard.html"
+               class="secondary-btn">
+
+                Medical College
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO VISUAL -->
+
+    <div class="hero-visual">
+
+        <div class="hero-card">
+
+            <div class="hero-map-icon">
+                🗺️
+            </div>
+
+            <h2>
+                Rural Healthcare Network
+            </h2>
+
+            <p>
+                Identify villages that need
+                healthcare outreach and connect
+                them with medical organizations.
+            </p>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>128</strong>
+                    <small>Villages</small>
+                </div>
+
+                <div>
+                    <strong>42</strong>
+                    <small>Covered</small>
+                </div>
+
+                <div>
+                    <strong>86</strong>
+                    <small>Due</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+    </main>
+<!-- =========================
+     HOW GRAM SETU WORKS
+     ========================= -->
+
+<section class="how-section">
+
+    <div class="section-heading">
+
+        <p class="hero-tagline">
+            SIMPLE • CONNECTED • EFFECTIVE
+        </p>
+
+        <h2>
+            How Gram Setu Works
+        </h2>
+
+        <p>
+            A simple connection between villages
+            and medical organizations.
+        </p>
+
+    </div>
+
+
+    <div class="steps-container">
+
+
+        <!-- STEP 01 -->
+
+        <div class="step-card">
+
+            <div class="step-number">
+                01
+            </div>
+
+            <div class="step-icon">
+                🏘️
+            </div>
+
+            <h3>
+                Village Shares Need
+            </h3>
+
+            <p>
+                The village coordinator provides
+                village information and identifies
+                healthcare requirements.
+            </p>
+
+        </div>
+
+
+        <!-- STEP 02 -->
+
+        <div class="step-card">
+
+            <div class="step-number">
+                02
+            </div>
+
+            <div class="step-icon">
+                🏥
+            </div>
+
+            <h3>
+                Medical College Connects
+            </h3>
+
+            <p>
+                Medical institutions identify
+                villages requiring outreach and
+                coordinate healthcare camps.
+            </p>
+
+        </div>
+
+
+        <!-- STEP 03 -->
+
+        <div class="step-card">
+
+            <div class="step-number">
+                03
+            </div>
+
+            <div class="step-icon">
+                🩺
+            </div>
+
+            <h3>
+                Healthcare Reaches Village
+            </h3>
+
+            <p>
+                Outreach is conducted and the
+                village coverage status is updated
+                from Due to Covered.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- =========================
+     VILLAGE COVERAGE
+     ========================= -->
+
+<section class="coverage-section">
+
+    <div class="coverage-header">
+
+        <div>
+
+            <p class="hero-tagline">
+                GRAM SETU • COVERAGE
+            </p>
+
+            <h2>
+                See Where Healthcare
+                <span>Is Needed</span>
+            </h2>
+
+            <p>
+                Monitor village healthcare coverage and
+                identify communities that need outreach.
+            </p>
+
+        </div>
+
+        <a href="medical-dashboard.html"
+           class="secondary-btn">
+
+            View Coverage →
+
+        </a>
+
+    </div>
+
+
+    <!-- COVERAGE CARD -->
+
+    <div class="coverage-card">
+
+        <div class="coverage-info">
+
+            <h3>
+                Village Coverage Overview
+            </h3>
+
+            <p>
+                Each village is represented by its
+                current healthcare coverage status.
+            </p>
+
+
+            <div class="coverage-legend">
+
+                <div>
+                    <span class="legend-dot covered-dot"></span>
+                    Covered
+                </div>
+
+                <div>
+                    <span class="legend-dot due-dot"></span>
+                    Outreach Due
+                </div>
+
+            </div>
+
+        </div>
+
+
+         <!-- REAL MAP -->
+
+<div class="coverage-map">
+
+    <div id="homeGramSetuMap"></div>
+
+</div>
+
+    </div>
+
+</section>
+
+    <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

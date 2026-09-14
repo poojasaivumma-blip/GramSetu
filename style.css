@@ -1,0 +1,1759 @@
+/* =========================
+   BASIC RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f8f5ff;
+
+    color: #24113f;
+
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+
+    height: 75px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 7%;
+
+    background: white;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #444;
+
+    font-size: 15px;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #6828a8;
+
+}
+
+
+/* =========================
+   BASIC PAGE
+   ========================= */
+
+main {
+
+    min-height: calc(100vh - 75px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+
+main h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+
+}
+
+
+main p {
+
+    font-size: 18px;
+
+    color: #666;
+
+}
+
+/* =========================
+   HOME HERO
+   ========================= */
+
+.home-hero {
+
+    min-height: calc(100vh - 75px);
+
+    padding: 70px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+
+    max-width: 650px;
+
+}
+
+
+.hero-tagline {
+
+    color: #7b42bd;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero-content h1 {
+
+    font-size: 56px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero-content h1 span {
+
+    display: block;
+
+    color: #6828a8;
+
+}
+
+
+.hero-description {
+
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+}
+
+
+/* BUTTONS */
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+}
+
+
+.primary-btn {
+
+    background: #6828a8;
+
+    color: white;
+
+}
+
+
+.secondary-btn {
+
+    background: white;
+
+    color: #6828a8;
+
+    border: 1px solid #6828a8;
+
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+
+    width: 370px;
+
+}
+
+
+.hero-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(70, 30, 100, 0.12);
+
+}
+
+
+.hero-map-icon {
+
+    font-size: 65px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero-card h2 {
+
+    margin-bottom: 12px;
+
+}
+
+
+.hero-card p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+}
+
+
+.hero-stats {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eee;
+
+}
+
+
+.hero-stats strong {
+
+    display: block;
+
+    font-size: 25px;
+
+    color: #6828a8;
+
+}
+
+
+.hero-stats small {
+
+    color: #777;
+
+}
+
+/* =========================
+   HOW GRAM SETU WORKS
+   ========================= */
+
+.how-section {
+
+    padding: 80px 7%;
+
+    background: white;
+
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 50px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 38px;
+
+    margin: 10px 0 15px;
+
+}
+
+
+.section-heading > p:last-child {
+
+    color: #666;
+
+    line-height: 1.6;
+
+}
+
+
+.steps-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.step-card {
+
+    position: relative;
+
+    padding: 32px 28px;
+
+    background: #f8f5ff;
+
+    border: 1px solid #eee;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+
+}
+
+
+.step-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 30px rgba(70, 30, 100, 0.10);
+
+}
+
+
+.step-number {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    color: #7b42bd;
+
+    margin-bottom: 18px;
+
+}
+
+
+.step-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.step-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.step-card p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .home-hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-visual {
+
+        width: 100%;
+
+        max-width: 370px;
+
+    }
+
+
+    .steps-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =========================
+   COVERAGE SECTION
+   ========================= */
+
+.coverage-section {
+
+    padding: 90px 7%;
+
+    background: #f8f5ff;
+
+}
+
+
+.coverage-header {
+
+    max-width: 1100px;
+
+    margin: 0 auto 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 30px;
+
+}
+
+
+.coverage-header h2 {
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    margin: 10px 0 15px;
+
+}
+
+
+.coverage-header h2 span {
+
+    display: block;
+
+    color: #6828a8;
+
+}
+
+
+.coverage-header p:last-child {
+
+    color: #666;
+
+    line-height: 1.6;
+
+    max-width: 550px;
+
+}
+
+
+/* COVERAGE CARD */
+
+.coverage-card {
+
+    max-width: 1100px;
+
+    min-height: 360px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 22px;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 35px;
+
+    box-shadow:
+        0 12px 35px rgba(70, 30, 100, 0.08);
+
+}
+
+
+.coverage-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.coverage-info h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.coverage-info > p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+}
+
+
+/* LEGEND */
+
+.coverage-legend {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+.coverage-legend div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-weight: bold;
+
+}
+
+
+.legend-dot {
+
+    width: 13px;
+
+    height: 13px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+}
+
+
+.covered-dot {
+
+    background: #3b9b62;
+
+}
+
+
+.due-dot {
+
+    background: #e0a52b;
+
+}
+
+
+/* DEMO MAP */
+
+.coverage-map {
+
+    position: relative;
+
+    min-height: 290px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f0ebfa,
+            #faf8ff
+        );
+
+    border: 1px solid #eee;
+
+}
+
+
+/* MAP LINES */
+
+.map-line {
+
+    position: absolute;
+
+    height: 1px;
+
+    background: #ddd;
+
+    transform: rotate(-20deg);
+
+}
+
+
+.line-one {
+
+    width: 80%;
+
+    top: 35%;
+
+    left: 10%;
+
+}
+
+
+.line-two {
+
+    width: 70%;
+
+    top: 60%;
+
+    left: 15%;
+
+    transform: rotate(15deg);
+
+}
+
+
+.line-three {
+
+    width: 55%;
+
+    top: 75%;
+
+    left: 25%;
+
+    transform: rotate(-35deg);
+
+}
+
+
+/* MAP POINTS */
+
+.map-point {
+
+    position: absolute;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.15);
+
+}
+
+
+.map-point span {
+
+    position: absolute;
+
+    white-space: nowrap;
+
+    left: 24px;
+
+    top: -5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #444;
+
+}
+
+
+.covered-point {
+
+    background: #3b9b62;
+
+}
+
+
+.due-point {
+
+    background: #e0a52b;
+
+}
+
+
+.point-one {
+
+    top: 28%;
+
+    right: 25%;
+
+}
+
+
+.point-two {
+
+    top: 55%;
+
+    left: 28%;
+
+}
+
+
+.point-three {
+
+    bottom: 18%;
+
+    right: 38%;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .coverage-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .coverage-card {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* =========================
+   VILLAGE DASHBOARD
+   ========================= */
+
+.dashboard-page {
+
+    padding: 55px 7%;
+
+}
+
+
+/* HEADER */
+
+.dashboard-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.dashboard-heading h1 {
+
+    font-size: 42px;
+
+    margin: 10px 0 12px;
+
+}
+
+
+.dashboard-heading > div:first-child > p:last-child {
+
+    color: #666;
+
+    line-height: 1.6;
+
+}
+
+
+/* PROFILE BADGE */
+
+.profile-badge {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: white;
+
+    padding: 15px 20px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 6px 20px rgba(70, 30, 100, 0.08);
+
+}
+
+
+.profile-icon {
+
+    font-size: 30px;
+
+}
+
+
+.profile-badge strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+}
+
+
+.profile-badge small {
+
+    color: #777;
+
+}
+
+
+/* =========================
+   STAT CARDS
+   ========================= */
+
+.dashboard-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.dashboard-stat-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 7px 25px rgba(70, 30, 100, 0.08);
+
+}
+
+
+.dashboard-stat-card span {
+
+    font-size: 27px;
+
+}
+
+
+.dashboard-stat-card strong {
+
+    display: block;
+
+    font-size: 28px;
+
+    color: #6828a8;
+
+    margin: 10px 0 5px;
+
+}
+
+
+.dashboard-stat-card small {
+
+    color: #777;
+
+}
+
+
+/* =========================
+   DASHBOARD GRID
+   ========================= */
+
+.village-dashboard-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.dashboard-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 7px 25px rgba(70, 30, 100, 0.08);
+
+}
+
+
+.card-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.card-label {
+
+    color: #7b42bd;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.card-heading h2 {
+
+    font-size: 24px;
+
+}
+
+
+.card-icon {
+
+    font-size: 30px;
+
+}
+
+
+/* PROFILE DETAILS */
+
+.profile-details {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+
+}
+
+
+.profile-details div {
+
+    background: #f8f5ff;
+
+    padding: 16px;
+
+    border-radius: 10px;
+
+}
+
+
+.profile-details span,
+.camp-info-grid span {
+
+    display: block;
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.profile-details strong,
+.camp-info-grid strong {
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   HEALTHCARE NEEDS
+   ========================= */
+
+.needs-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.needs-list div {
+
+    padding: 12px;
+
+    background: #f8f5ff;
+
+    border-radius: 9px;
+
+    color: #444;
+
+}
+
+
+.needs-list span {
+
+    color: #6828a8;
+
+    font-weight: bold;
+
+    margin-right: 8px;
+
+}
+
+
+.dashboard-action {
+
+    width: 100%;
+
+}
+
+
+/* =========================
+   UPCOMING CAMP
+   ========================= */
+
+.upcoming-card {
+
+    margin-bottom: 25px;
+
+}
+
+
+.status-badge {
+
+    background: #fff4d6;
+
+    color: #9a6a00;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.camp-info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.camp-info-grid div {
+
+    padding: 17px;
+
+    background: #f8f5ff;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================
+   REQUEST BANNER
+   ========================= */
+
+.request-banner {
+
+    background: #6828a8;
+
+    color: white;
+
+    padding: 25px 30px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.request-banner > div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.request-icon {
+
+    font-size: 35px;
+
+}
+
+
+.request-banner h3 {
+
+    margin-bottom: 5px;
+
+}
+
+
+.request-banner p {
+
+    opacity: 0.85;
+
+    font-size: 14px;
+
+}
+
+
+.request-banner .secondary-btn {
+
+    background: white;
+
+    border: none;
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .dashboard-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .village-dashboard-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .camp-info-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .dashboard-heading {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .dashboard-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .profile-details {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .camp-info-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .request-banner {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+}
+
+/* =========================
+   MEDICAL COLLEGE DASHBOARD
+   ========================= */
+
+.medical-page {
+    padding: 55px 7%;
+}
+
+.medical-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.medical-header h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.medical-header p:last-child {
+    color: #666;
+    line-height: 1.6;
+}
+
+.college-profile {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: white;
+    padding: 16px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(70,30,100,0.08);
+}
+
+.college-icon {
+    font-size: 32px;
+}
+
+.college-profile strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.college-profile small {
+    color: #777;
+}
+
+
+/* STATISTICS */
+
+.medical-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.medical-stat {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 7px 25px rgba(70,30,100,0.08);
+}
+
+.medical-stat span {
+    font-size: 27px;
+}
+
+.medical-stat strong {
+    display: block;
+    font-size: 28px;
+    color: #6828a8;
+    margin: 10px 0 5px;
+}
+
+.medical-stat small {
+    color: #777;
+}
+
+
+/* MAIN GRID */
+
+.medical-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.medical-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 7px 25px rgba(70,30,100,0.08);
+}
+
+.medical-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.medical-card-header h2 {
+    font-size: 24px;
+}
+
+.card-icon {
+    font-size: 30px;
+}
+
+
+/* VILLAGE LIST */
+
+.village-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.village-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: #f8f5ff;
+    border-radius: 11px;
+}
+
+.village-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.village-item small {
+    color: #777;
+}
+
+.due-badge {
+    background: #fff4d6;
+    color: #9a6a00;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* MAP */
+
+.demo-map {
+    height: 300px;
+    background:
+        linear-gradient(135deg, #eee8f8 25%, transparent 25%) -20px 0,
+        linear-gradient(225deg, #eee8f8 25%, transparent 25%) -20px 0,
+        linear-gradient(315deg, #eee8f8 25%, transparent 25%),
+        linear-gradient(45deg, #eee8f8 25%, transparent 25%);
+    background-size: 40px 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.map-title {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.map-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 0 5px rgba(255,255,255,0.7);
+}
+
+.red-dot {
+    left: 28%;
+    top: 42%;
+    background: #e04b4b;
+}
+
+.yellow-dot {
+    left: 53%;
+    top: 35%;
+    background: #e5b93f;
+}
+
+.green-dot {
+    left: 65%;
+    top: 55%;
+    background: #45a86b;
+}
+
+.dot-two {
+    left: 42%;
+    top: 67%;
+}
+
+.dot-three {
+    left: 75%;
+    top: 30%;
+}
+
+.map-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-top: 12px;
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+.map-legend span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.map-legend i {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legend-red {
+    background: #e04b4b;
+}
+
+.legend-yellow {
+    background: #e5b93f;
+}
+
+.legend-green {
+    background: #45a86b;
+}
+
+
+/* CAMP MANAGEMENT */
+
+.camp-management {
+    margin-bottom: 25px;
+}
+
+.camp-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.action-box {
+    border: none;
+    background: #f8f5ff;
+    padding: 22px;
+    border-radius: 13px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action-box:hover {
+    transform: translateY(-3px);
+}
+
+.action-box span {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.action-box strong {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.action-box small {
+    color: #777;
+}
+
+
+/* RECENT ACTIVITY */
+
+.recent-card {
+    margin-bottom: 30px;
+}
+
+.activity-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-row:last-child {
+    border-bottom: none;
+}
+
+.activity-icon {
+    font-size: 20px;
+}
+
+.activity-row strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.activity-row small {
+    color: #777;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .medical-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .medical-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .camp-actions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .medical-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .medical-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .camp-actions {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+#gramSetuMap {
+    width: 100%;
+    height: 360px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* =========================
+   HOME PAGE REAL MAP
+   ========================= */
+
+.coverage-map {
+    width: 100%;
+    min-height: 430px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#homeGramSetuMap {
+    width: 100%;
+    height: 430px;
+}

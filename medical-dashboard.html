@@ -1,0 +1,515 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Medical College - Gram Setu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet Map CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            <img
+                src="Logo1.jpg"
+                alt="Gram Setu Logo"
+            >
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="village-dashboard.html">
+                Village Coordinator
+            </a>
+
+            <a href="medical-dashboard.html">
+                Medical College
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         MEDICAL COLLEGE DASHBOARD
+         ========================= -->
+
+    <main class="medical-page">
+
+
+        <!-- HEADER -->
+
+        <section class="medical-header">
+
+            <div>
+
+                <p class="hero-tagline">
+                    GRAM SETU • MEDICAL COLLEGE
+                </p>
+
+                <h1>
+                    Outreach Dashboard
+                </h1>
+
+                <p>
+                    Identify villages that need healthcare outreach,
+                    plan medical camps, and track coverage.
+                </p>
+
+            </div>
+
+
+            <div class="college-profile">
+
+                <div class="college-icon">
+                    🏥
+                </div>
+
+                <div>
+
+                    <strong>
+                        Demo Medical College
+                    </strong>
+
+                    <small>
+                        Healthcare Outreach Partner
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+
+        <section class="medical-stats">
+
+            <div class="medical-stat">
+
+                <span>🏘️</span>
+
+                <strong>128</strong>
+
+                <small>
+                    Registered Villages
+                </small>
+
+            </div>
+
+
+            <div class="medical-stat">
+
+                <span>🟡</span>
+
+                <strong>42</strong>
+
+                <small>
+                    Villages Due
+                </small>
+
+            </div>
+
+
+            <div class="medical-stat">
+
+                <span>🟢</span>
+
+                <strong>86</strong>
+
+                <small>
+                    Villages Covered
+                </small>
+
+            </div>
+
+
+            <div class="medical-stat">
+
+                <span>🩺</span>
+
+                <strong>34</strong>
+
+                <small>
+                    Camps Conducted
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAIN GRID -->
+
+        <section class="medical-grid">
+
+
+            <!-- PRIORITY VILLAGES -->
+
+            <div class="medical-card villages-card">
+
+                <div class="medical-card-header">
+
+                    <div>
+
+                        <p class="card-label">
+                            PRIORITY VILLAGES
+                        </p>
+
+                        <h2>
+                            Villages Needing Outreach
+                        </h2>
+
+                    </div>
+
+                    <span class="card-icon">
+                        📍
+                    </span>
+
+                </div>
+
+
+                <div class="village-list">
+
+                    <div class="village-item">
+
+                        <div>
+
+                            <strong>
+                                Rampur
+                            </strong>
+
+                            <small>
+                                Kurnool • General Checkup
+                            </small>
+
+                        </div>
+
+                        <span class="due-badge">
+                            Due
+                        </span>
+
+                    </div>
+
+
+                    <div class="village-item">
+
+                        <div>
+
+                            <strong>
+                                Lakshmipuram
+                            </strong>
+
+                            <small>
+                                Anantapur • Screening
+                            </small>
+
+                        </div>
+
+                        <span class="due-badge">
+                            Due
+                        </span>
+
+                    </div>
+
+
+                    <div class="village-item">
+
+                        <div>
+
+                            <strong>
+                                Ramapuram
+                            </strong>
+
+                            <small>
+                                Kadapa • Health Awareness
+                            </small>
+
+                        </div>
+
+                        <span class="due-badge">
+                            Due
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="primary-btn"
+                    onclick="scheduleCamp()"
+                >
+                    Schedule Outreach
+                </button>
+
+            </div>
+
+
+            <!-- REAL MAP -->
+
+            <div class="medical-card map-card">
+
+                <div class="medical-card-header">
+
+                    <div>
+
+                        <p class="card-label">
+                            VILLAGE COVERAGE MAP
+                        </p>
+
+                        <h2>
+                            Outreach Coverage
+                        </h2>
+
+                    </div>
+
+                    <span class="card-icon">
+                        🗺️
+                    </span>
+
+                </div>
+
+
+                <!-- Leaflet Map -->
+
+                <div id="gramSetuMap"></div>
+
+
+                <!-- Map Legend -->
+
+                <div class="map-legend">
+
+                    <span>
+                        <i class="legend-red"></i>
+                        Not Covered
+                    </span>
+
+                    <span>
+                        <i class="legend-yellow"></i>
+                        Due
+                    </span>
+
+                    <span>
+                        <i class="legend-green"></i>
+                        Covered
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CAMP MANAGEMENT -->
+
+        <section class="medical-card camp-management">
+
+            <div class="medical-card-header">
+
+                <div>
+
+                    <p class="card-label">
+                        OUTREACH MANAGEMENT
+                    </p>
+
+                    <h2>
+                        Camp Activity
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="camp-actions">
+
+                <button
+                    class="action-box"
+                    onclick="scheduleCamp()"
+                >
+
+                    <span>📅</span>
+
+                    <strong>
+                        Schedule Camp
+                    </strong>
+
+                    <small>
+                        Plan an outreach visit
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="action-box"
+                    onclick="viewRecords()"
+                >
+
+                    <span>📋</span>
+
+                    <strong>
+                        Previous Records
+                    </strong>
+
+                    <small>
+                        View completed camps
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="action-box"
+                    onclick="addRecord()"
+                >
+
+                    <span>➕</span>
+
+                    <strong>
+                        Add Camp Record
+                    </strong>
+
+                    <small>
+                        Submit outreach results
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="action-box"
+                    onclick="collaborate()"
+                >
+
+                    <span>🤝</span>
+
+                    <strong>
+                        Collaborate
+                    </strong>
+
+                    <small>
+                        Connect with partners
+                    </small>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT ACTIVITY -->
+
+        <section class="medical-card recent-card">
+
+            <div class="medical-card-header">
+
+                <div>
+
+                    <p class="card-label">
+                        RECENT ACTIVITY
+                    </p>
+
+                    <h2>
+                        Outreach Updates
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="activity-row">
+
+                <span class="activity-icon">
+                    🟢
+                </span>
+
+                <div>
+
+                    <strong>
+                        Rampur outreach request received
+                    </strong>
+
+                    <small>
+                        Village Coordinator • Today
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="activity-row">
+
+                <span class="activity-icon">
+                    🩺
+                </span>
+
+                <div>
+
+                    <strong>
+                        Previous camp record added
+                    </strong>
+
+                    <small>
+                        Demo Medical College • 3 days ago
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Leaflet JavaScript -->
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+
+    <!-- Project JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
